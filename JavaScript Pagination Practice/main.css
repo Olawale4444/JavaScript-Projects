@@ -1,0 +1,92 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+body {
+	background: lightgreen;
+}
+
+header {
+
+	background: lightgreen;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+	border-bottom-right-radius: 45px;
+	border-bottom-left-radius: 45px;
+	color: darkgreen;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 60px;
+
+}
+
+main {
+	flex-direction: column;
+	display: flex;
+	align-items: center;
+}
+
+main .list {
+	width: 100%;
+	max-width: 518px;
+	background-color: lightgreen;
+	border: 2.3px solid darkgreen;
+	margin-top: 25px;
+	border-radius: 15px;
+
+}
+
+main .list .item {
+	padding: 15px;
+	border-bottom: 3px solid darkgreen;
+	color: darkgreen;
+	font-size: large;
+	font-weight: bold;
+}
+main .list .item:last-of-type {
+	border-bottom: none;
+}
+main .list .item:hover {
+	background: rgba(0, 0, 0, 0.05);
+/*
+	box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.7);*/
+
+}
+
+.pagenumbers {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.pagenumbers button {
+	width: 50px;
+	height: 50px;
+	background-color: lightgreen;
+	margin: 5px;
+	transition: 0.4s;
+	appearance: none;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	border-radius: 8px;
+
+	color: #FFF;
+	font-size: 21px;
+	text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
+	box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
+}
+
+.pagenumbers button:hover {
+	background-color: lightgreen;
+}
+
+.pagenumbers button.active {
+	background-color: green;
+	box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.2);
+	border: 2px solid white;
+}
