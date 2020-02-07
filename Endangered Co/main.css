@@ -4,7 +4,7 @@
 	box-sizing: border-box;
 }
 
-body{
+.container{
 	/* background: green; */
 	background-color: green;
 	/* background: radial-gradient(rgba(43, 55, 97, 1), rgba(11,16,35,1)); */
@@ -22,6 +22,7 @@ nav{
 	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 	justify-content: space-between;
 	/* border: 12px solid green; */
+	box-shadow: 0px 5px 3px rgba(0,0,0, 0.1);
 }
 
 nav .menu{
@@ -33,6 +34,7 @@ nav .menu:hover{
 	border-bottom: 1.5px solid white;
 	transition: 0.5s ease-in-out;
 	transition-duration: 0.5s;
+	box-shadow: 0px 5px 3px rgba(0,0,0, 0.1);
 
 
 }
@@ -54,6 +56,11 @@ nav .menu:hover{
 	justify-content: center;
 }
 
+/* .dpo{
+	height: 250px;
+	margin-left: 790px;
+} */
+
 .image img{
 	height: 500px;
 	transition: transform 0.3s ease-out;
@@ -71,13 +78,19 @@ nav .menu:hover{
 
 .image:hover .leftpanda {
 	transform: translate(0%, 0%);
+
 }
+.image:hover{
+	border: 1px solid darkgreen;
+}
+
 .image:hover .rightpanda {
 	transform: translate(0%, 0%);
 }
 
 .image:hover .leftkoala {
 	transform: translate(0%, 0%);
+
 }
 .image:hover .rightkoala {
 	transform: translate(0%, 0%);
@@ -96,7 +109,7 @@ nav .menu:hover{
 	align-self: end;
 	color: snow;
 	font-family: monospace;
-	margin-bottom: 50px;
+	margin-bottom: 110px;
 	
 	
 }
@@ -109,9 +122,172 @@ nav .menu:hover{
 
 .details h2{
 	font-size: 27px;
+	padding: 14px 0px;
 }
 .details p{
 	font-size: 16px;
 }
 
+.page1{
+	position: absolute;
+	right: 5%;
+	transform: translateY(-50%);
+	top: 50%;
+}
+.page1 .pa {
+	display: flex;
+	justify-content: center;
+	/* border: 1px solid black; */
+	padding-bottom: 37px;
 
+}
+
+
+.page1 .pa h3 {
+	font-size: 25px;
+	/* display: flex; */
+	padding-right: 5px;
+	cursor: pointer;
+	font-family: Arial, Helvetica, sans-serif;
+	/* opacity: 0.8; */
+	text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.55);
+	color: white;
+}
+
+.page1 .pa img {
+	/* font-size: 25px; */
+	/* display: flex; */
+	/* padding-right: 5px; */
+	padding-left: 5px;
+	height: 24px;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	opacity: 0.4;
+	transform: scale(1.5);
+	/* text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.75); */
+	box-shadow: 0px 1px 0.51px rgba(0,0,0, 0.05);
+
+}
+
+.page1 .pa:hover img {
+	opacity: 0.7;
+	animation: animo 0.43s ease-in-out infinite alternate; duration timing-function delay iteration-count direction fill-mode;
+
+}
+
+.page1 .pa:active img {
+	transform: scale(1.7);
+	opacity: 1;
+	/* text-shadow: ; */
+	text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.75);
+	/* transition: ease-in-out; */
+
+}
+
+@keyframes animo{
+	0%{
+		transform: scale(1.5);
+		
+	}
+
+
+	100%{
+		transform: scale(1.7);
+		/* border: 0.2px solid black; */
+		/* border-radius: 100px; */
+	}
+}
+
+
+
+/* Koala */
+.wrapper{
+	background-color: rgb(1, 141, 255);
+}
+
+.toptext{
+background-repeat: unset;
+	font-size: 62px;
+	font-family: Arial, Helvetica, sans-serif;
+	background-image: ;
+	width: 100%;	
+}
+
+.photo{
+	width: 100%;
+	opacity: 0.7;
+}
+
+.About, .origin{
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	align-items: center;
+	padding-left: 8.4vw;
+	padding-right: 9vw;
+}
+.About{
+	/* margin-top: 50px; */
+
+}
+
+.origin{
+	margin-top: 60px;
+}
+
+.dp{
+	height: 50vh;
+}
+.dp:hover{
+	transform: scale(1.05);
+	animation: dppop 0.7s ease-in-out infinite alternate; timing-function delay iteration-count direction fill-mode;
+}
+
+@keyframes dppop{
+	0%{
+		transform: scale(1.05);
+	}
+	100%{
+		transform: scale(1.1);
+	}
+}
+
+.about-text, .origin-text{
+	
+font-family: Arial, Helvetica, sans-serif;
+font-style: normal;
+font-weight: bold;
+font-size: 50px;
+line-height: 75px;
+text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.95);
+
+color: #3532FE;
+
+}
+
+ .text p{
+	/* width: 790px; */
+	width: 98%;
+	font-size: 20px;
+	color: white;
+	/* max-width: 120px; */
+	text-justify:inter-word ;
+}
+
+.texttwo p{
+	width: 80%;
+	font-size: 20px;
+	color: white;
+	/* max-width: 120px; */
+	text-justify:inter-word ;
+}
+.shots {
+	flex: auto;
+	align-items: flex-start;
+}
+
+.header{
+	/* height: 50vh; */
+
+}
